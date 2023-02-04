@@ -10,23 +10,23 @@ $(window).scroll(function () {
         // $('#nossos-relogios').removeClass('invisible');        
     }
     
-    if ($("#nossos-relogios").offset().top - $(window).scrollTop() < 200) {
+    if ($("#nossos-relogios").offset().top - $(window).scrollTop() < 500) {
         $('#nossos-relogios').removeClass('invisible');
         $('#nossos-relogios').removeClass('apagar');
         $('#nossos-relogios').addClass('acender');
     } 
-    if($("#nossos-relogios").offset().top - $(window).scrollTop() > 200) {
+    if($("#nossos-relogios").offset().top - $(window).scrollTop() > 500) {
         $('#nossos-relogios').removeClass('acender');
         $('#nossos-relogios').addClass('apagar');
 
     }
 
-    if ($("#clocks").offset().top - $(window).scrollTop() < 500) {
+    if ($("#clocks").offset().top - $(window).scrollTop() < 750) {
         $('#clocks').removeClass('invisible');
         $('#clocks').removeClass('apagar');
         $('#clocks').addClass('acender');
     }
-    if ($("#clocks").offset().top - $(window).scrollTop() > 500) {
+    if ($("#clocks").offset().top - $(window).scrollTop() > 750) {
         $('#clocks').removeClass('acender');
         $('#clocks').addClass('apagar');
     }
