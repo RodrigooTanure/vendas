@@ -1,9 +1,9 @@
 body {
-    background: #4b6cb7;
+    background: #252525;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);
+    /* background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #182848, #4b6cb7);
+    /* background: linear-gradient(to bottom, #182848, #4b6cb7); */
     background-repeat: no-repeat;
     background-size: contain;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -27,15 +27,45 @@ nav i, a {
 @keyframes acender {
     from {
         opacity: 0;
+        right: 100px;
     }
     to {
         opacity: 1;
     }
 }
 
+@keyframes apagar {
+    from {
+        opacity: 1;
+        right: 0px;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .acender {
     animation-name: acender;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
+    opacity: 1;
+    position: relative;
+    right: 0;
+}
+
+.apagar {
+    animation-name: apagar;
+    animation-duration: 1.5s;
+    position: relative;
+    opacity: 0;
+    right: 100px;
+}
+
+#products-section img {
+    height: 200px;
+}
+
+.img-shadow {
+    box-shadow: 1px 1px 5px #000;
 }
 
 .relogios {
@@ -47,11 +77,36 @@ nav i, a {
 }
 
 .relogios-card .img-div {
-    border-bottom: 2px solid #ccc;
-    border-right: 2px solid #ccc;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
 .clock-cards {
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.clock-cards img {
+    height: 120px;
+    width: 90px;
+}
+
+.cards {
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+@media (min-width: 992px) {
+    .cards {
+        margin-top: -120px;
+    }
+    .carousel-caption {
+        bottom: 100px;
+        background-color: #383838;
+        text-transform: uppercase;
+    }
+    
 }
