@@ -16,20 +16,13 @@ nav i, a {
     border: none;
 }
 
-#main {
+/* #main {
     text-shadow: 1px 2px 1px #000;
-}
+} */
 
-#catalogo {
+/* #catalogo {
     min-height: 100vh;
-}
-
-@media (max-width: 766px) {
-    #catalogo {
-        position: relative;
-        top: 100px;
-    }
-}
+} */
 
 @keyframes acender {
     from {
@@ -42,14 +35,23 @@ nav i, a {
 
 .acender {
     animation-name: acender;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .relogios {
-    background-color: #ffffff6e;
+    /* background-color: #ffffff6e; */
 }
 
 .relogios-card {
-    background-color: #fff;
-    padding: 10px;
+    color: #383838;
+}
+
+.relogios-card .img-div {
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+.clock-cards {
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

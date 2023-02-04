@@ -1,9 +1,12 @@
-$(window).scroll(function() {
-    console.log($(window).scrollTop())
-    if($(window).scrollTop() > 145) {
+$(window).scroll(function () {
+        
+    if ($(window).scrollTop() > 145) {
         $('.relogios').addClass('acender');
+        $('.relogios').removeClass('invisible');
     }
 });
+
+$(window).scrollTop(0);
 
 
 /*
