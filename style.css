@@ -52,6 +52,16 @@ nav i, a {
     height: 200px;
 }
 
+#nossos-relogios h2 {
+    font-size: 1.2em;
+}
+
+@media (min-width: 575px) {
+    #nossos-relogios h2 {
+        font-size: 2em;
+    }
+}
+
 .img-shadow {
     box-shadow: 1px 1px 5px #000;
 }
@@ -92,5 +102,14 @@ nav i, a {
         background-color: #383838;
         text-transform: uppercase;
     }
-    
+}
+
+.consert-div {
+    display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .consert-div {
+        display: block;
+    }
 }

@@ -36,34 +36,9 @@ console.log($('#clocks').offset().top - $(window).scrollTop())
 
 console.log($('#nossos-relogios').scrollTop());
 
-// $(window).on("scroll", function(){
-//     console.log($('#clocks').offset().top - $(window).scrollTop());
-//     if ($("#clocks").offset().top - $(window).scrollTop() < 500) {
-//         $('#clocks').removeClass('invisible');
-//         $('#clocks').addClass('acender');
-//         console.log($("#clocks").offset().top - $(window).scrollTop());
-//         console.log("oi")
-//     }
-// });
-
-
-/*
-      $(window).scroll(function () {
-            console.log('Você está na posição ' + $(window).scrollTop());
-            if($(window).scrollTop() > 10 && $(window).scrollTop() < 50) {
-                $('h1').addClass('selected_section');
-                $('div h3 u:eq(0)').removeClass('selected_section');
-                $('div h3 u:eq(1)').removeClass('selected_section');
-            } 
-            if($(window).scrollTop() > 51 && $(window).scrollTop() < 90) {
-                $('div h3 u:eq(0)').addClass('selected_section');
-                $('div h3 u:eq(1)').removeClass('selected_section');
-                $('h1').removeClass('selected_section');
-            }
-            if($(window).scrollTop() > 91) {
-                $('div h3 u:eq(0)').removeClass('selected_section');
-                $('div h3 u:eq(1)').addClass('selected_section');
-                $('h1').removeClass('selected_section');
-            }
-        }) 
-*/
+$('.nav-link').on('click', function() {
+    $('.navbar-toggler').addClass('collapsed');
+    $('.navbar-toggler').attr('aria-expanded', 'false');
+    // $('.navbar-collapse').removeClass('collapse');
+    $('.navbar-collapse').removeClass('show');
+});
