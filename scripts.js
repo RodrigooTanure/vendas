@@ -32,9 +32,8 @@ $(window).scroll(function () {
     }
 });
 
-console.log($('#clocks').offset().top - $(window).scrollTop())
-
-console.log($('#nossos-relogios').scrollTop());
+// console.log($('#clocks').offset().top - $(window).scrollTop())
+// console.log($('#nossos-relogios').scrollTop());
 
 $('.nav-link').on('click', function() {
     $('.navbar-toggler').addClass('collapsed');
